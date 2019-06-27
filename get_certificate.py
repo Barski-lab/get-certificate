@@ -11,11 +11,11 @@ from godaddypy import Client, Account
 def get_parser():
     parser = argparse.ArgumentParser(description='Python script to generate certificate for name.suffix.domain on Godaddy', add_help=True)
     parser.add_argument("-c", "--config", help="Path to the godaddy configuration file")
-    parser.add_argument("-n", "--name",   help="Host's name", default=None)
+    parser.add_argument("-n", "--name",   help="Host's name. Default - random 32-character string", default=None)
     parser.add_argument("-i", "--ip",     help="Host's IP address")
     parser.add_argument("-s", "--suffix", help="Host's suffix", default="worker")
     parser.add_argument("-d", "--domain", help="Host's domain")
-    parser.add_argument("-o", "--output", help="Output folder", default="./cert")
+    parser.add_argument("-o", "--output", help="Output folder. Default - ./cert", default="./cert")
     return parser
 
 
