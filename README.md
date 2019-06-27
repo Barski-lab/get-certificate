@@ -14,7 +14,7 @@
    secret=bbb
 ```
 
-3. Run `get_certificate.py --help` to see the parameters to set.
+3. Run `python get_certificate.py --help` to see the parameters to set.
 ```
    Python script to generate certificate for name.suffix.domain on Godaddy
 
