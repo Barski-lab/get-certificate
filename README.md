@@ -1,12 +1,17 @@
 ## Python script to generate certificate for name.suffix.domain on Godaddy
 
-1. Insall dependencies
+1. Clone the repository
+```
+   git clone https://github.com/Barski-lab/get-certificate.git --recursive
+```
+
+2. Insall dependencies
 
 ```
    pip install godaddypy configparser
 ```
 
-2. Create configuration file
+3. Create configuration file
 
 ```
    [godaddy]           
@@ -14,7 +19,7 @@
    secret=bbb
 ```
 
-3. Run `python get_certificate.py --help` to see the parameters to set.
+4. Run `python get_certificate.py --help` to see the parameters to set.
 ```
    Python script to generate certificate for name.suffix.domain on Godaddy
 
